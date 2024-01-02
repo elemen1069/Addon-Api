@@ -1,11 +1,12 @@
-물론, README.md 파일에 한국어 / 영어 버튼과 작성자 정보를 추가한 예시를 아래에 제공합니다.
-
 ```markdown
 # 마인크래프트 애드온 API 레포지토리
 
 <div align="center">
   <img src="https://your-repository-image-url.png" alt="Repository Logo" width="300px">
 </div>
+
+![English](https://img.shields.io/badge/English-inactive?style=for-the-badge)
+[![中文](https://img.shields.io/badge/简体中文-informational?style=for-the-badge)](README.zh.md)
 
 ## 소개
 
@@ -45,10 +46,6 @@
    console.log(`두 점 간의 거리: ${distance}`);
    ```
 
-## 언어 변경
-
-- [English](README_EN.md)
-- [한국어](README.md)
 
 ## 작성자
 
