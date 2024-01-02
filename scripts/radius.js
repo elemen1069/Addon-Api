@@ -8,7 +8,7 @@
  * 
  * @returns {result | false}
  */
-function getradius(location1 = undefined, location2 = undefined) {
+export function getradius(location1 = undefined, location2 = undefined) {
     if (typeof location1 !== "object") {Error("location1 is not object"); return false;};
     
     if (typeof location2 !== "object") {Error("location2 is not object"); return false;};
