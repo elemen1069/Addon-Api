@@ -13,23 +13,23 @@ export const MusicList = [];
  */
 export function playmusic(player = undefined, music = undefined, option = {loop : 0, pitch : 1.0, volume: 1.0}) {
 
-    // _____________________ Error Message
+    // _____________________ console.warn Message
 
-    if (player == undefined) { Error("Player is undefined"); return; };
+    if (player == undefined) { console.warn("Player is undefined"); return; };
     
-    if (music == undefined) { Error("Music is undefined"); return; };
+    if (music == undefined) { console.warn("Music is undefined"); return; };
 
-    if (typeof player !== Player) { Error("Player is not a player type"); return; };
+    if (typeof player !== Player) { console.warn("Player is not a player type"); return; };
 
-    if (typeof music !== "string") { Error("Music is not a string type"); return; };
+    if (typeof music !== "string") { console.warn("Music is not a string type"); return; };
     
-    if (typeof option !== "object") { Error("option is not a object type"); return; };
+    if (typeof option !== "object") { console.warn("option is not a object type"); return; };
     
-    if (typeof option.pitch !== "number") { Error("pitch is not a number type"); return; };
+    if (typeof option.pitch !== "number") { console.warn("pitch is not a number type"); return; };
     
-    if (typeof option.volume !== "number") { Error("volume is not a number type"); return; };
+    if (typeof option.volume !== "number") { console.warn("volume is not a number type"); return; };
 
-    if (typeof option.loop !== "number") { Error("loop is not a number type"); return; };
+    if (typeof option.loop !== "number") { console.warn("loop is not a number type"); return; };
 
     // ________________________________
 
