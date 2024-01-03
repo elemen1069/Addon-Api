@@ -11,9 +11,9 @@ import { world } from "@minecraft/server";
  * @returns {boolean}
  */
 export function setData(name = undefined, value = null) {
-    if (name == undefined) { Error("name is undefined"); return false;};
+    if (name == undefined) { console.warn("name is undefined"); return false;};
 
-    if (value == null) { Error("value is null"); return false;};
+    if (value == null) { console.warn("value is null"); return false;};
 
      if (typeof value == "object" | typeof value == "array") { world.setDynamicProperty(name, JSON.stringify(value)); return; };
 
@@ -32,7 +32,7 @@ export function setData(name = undefined, value = null) {
  * @returns {boolean}
  */
 export function removeData(name = undefined) {
-    if (name == undefined) { Error("name is undefined"); return false;};
+    if (name == undefined) { console.warn("name is undefined"); return false;};
 
     world.setDynamicProperty(name, undefined);
 
@@ -69,7 +69,7 @@ export function clearallData() {
  * @returns {value | false}
  */
 export function getData(name = undefined) {
-    if (name == undefined) { Error("name is undefined"); return false;};
+    if (name == undefined) { console.warn("name is undefined"); return false;};
 
     const value = world.getDynamicProperty(name);
 
