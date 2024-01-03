@@ -66,7 +66,7 @@ export function clearallData() {
  * Get data in Dynamicproperty
  * 다이나믹프로퍼타이에 데이터를 가져옵니다.
  * 
- * @returns {value | false}
+ * @returns {string | number | false}
  */
 export function getData(name = undefined) {
     if (name == undefined) { console.warn("name is undefined"); return false;};
@@ -81,7 +81,7 @@ export function getData(name = undefined) {
  * Get all data in Dynamicproperty
  * 다이나믹프로퍼타이에 모든 데이터를 가져옵니다.
  * 
- * @returns {values | false}
+ * @returns {[] | false}
  */
 export function getallData() {
 
