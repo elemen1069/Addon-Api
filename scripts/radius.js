@@ -6,7 +6,7 @@
  * Get radius in two location
  * 두 좌표에 반지름을 가져옵니다.
  * 
- * @returns {result | false}
+ * @returns {number| false}
  */
 export function getradius(location1 = undefined, location2 = undefined) {
     if (typeof location1 !== "object") {console.warn("location1 is not object"); return false;};
