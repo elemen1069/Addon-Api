@@ -9,9 +9,9 @@
  * @returns {result | false}
  */
 export function getradius(location1 = undefined, location2 = undefined) {
-    if (typeof location1 !== "object") {Error("location1 is not object"); return false;};
+    if (typeof location1 !== "object") {console.warn("location1 is not object"); return false;};
     
-    if (typeof location2 !== "object") {Error("location2 is not object"); return false;};
+    if (typeof location2 !== "object") {console.warn("location2 is not object"); return false;};
 
 
     const X = Math.round(location2.x) - Math.round(location1.x);
