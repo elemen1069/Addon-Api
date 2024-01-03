@@ -15,6 +15,8 @@ export function setData(name = undefined, value = null) {
 
     if (value == null) { Error("value is null"); return false;};
 
+     if (typeof value == "object" | typeof value == "array") { world.setDynamicProperty(name, JSON.stringify(value)); return; };
+
     world.setDynamicProperty(name , value);
 
     return true;
