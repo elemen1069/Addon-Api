@@ -69,7 +69,7 @@ export function clearallData() {
  * @returns {string | number | false}
  */
 export function getData(name = undefined) {
-    if (type of name !== "string") { console.warn("name is not string"); return false;};
+    if (typeof name !== "string") { console.warn("name is not string"); return false;};
     
     if (world.getDynamicProperty(name) == undefined) { console.warn("value is undefined"); return false; };
 
