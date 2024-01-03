@@ -70,6 +70,8 @@ export function clearallData() {
  */
 export function getData(name = undefined) {
     if (type of name !== "string") { console.warn("name is not string"); return false;};
+    
+    if (world.getDynamicProperty(name) == undefined) { console.warn("value is undefined"); return false; };
 
     const value = world.getDynamicProperty(name);
 
